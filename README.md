@@ -9,7 +9,8 @@ Updating ...
 
 <a name="configuration"></a>
 ##### Step 2: Use
-> Open `config/app.php` and register the required service provider.
+> User guides
+
 ```php
 $paginator = new Paginator($data, $current_url, $current_page, $name_paging);
 ```
@@ -36,7 +37,7 @@ $paginator = new Paginator($data, $current_url, $current_page, $name_paging);
 ```
 
 - Show paginator on html template
-```php
+```
 <div>
 	<?php $paginator->links(); ?>
 </div>
