@@ -1,5 +1,5 @@
-# Extension Kit
- > It's an extension kit for our theme https://github.com/hieu-pv/nf-theme 
+# Pagination for Wordpress
+ > It's an extension kit for our theme https://github.com/hieu-pv/nf-theme and have use "illuminate/pagination" package of Symfony.
  
 <a name="installation"></a>
 ##### Step 1: Install 
@@ -28,7 +28,7 @@ $paginator = new Paginator($data, $current_url, $current_page, $name_paging);
 
     $current_url = home_url(add_query_arg([], $wp->request));
     $user_id     = get_current_user_id();
-    
+
     $all_notify  = User::where('user_id', $user_id)->orderBy('ID', 'DESC')->paginate(4,['*'], 'trang', $page)->setPageName("trang");
 
 
